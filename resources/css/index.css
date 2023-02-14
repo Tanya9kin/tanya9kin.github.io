@@ -1,142 +1,115 @@
+@font-face {
+  font-family: headingFont;
+  src: url(../fonts/AMATICASC-REGULAR.TTF);
+}
+
+@font-face {
+  font-family: contentFontHebrew;
+  src: url(../fonts/GveretLevinAlefAlefAlef-Regular.ttf);
+}
+
+@font-face {
+  font-family: contentFontEnglish;
+  src: url(../fonts/HADASAH.TTF);
+}
+
+/* here for the purpose of the background of the page being separted from the rest */
+#wrapper {
+  background-color: #fff8e9;
+  background-image: url(../images/28.png), url(../images/7.png);
+  background-position: right bottom, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 30vw;
+}
+
 body {
-  /* 709176 */
-  background-color: #191919;
-  color: #fdffff;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: contentFontEnglish;
+  text-align: center;
   margin: 0;
-}
-/* 6B7FD7 */
-/* BCEDF6 */
-/* DDFBD2 */
-/* DAFF7D */
-/* 191919 */
-
-header {
-  width: fit-content;
-  margin: 40px auto;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #ddfbd2;
+  color: #121f5f;
+  /* opacity: 100%; */
 }
 
-header img {
-  z-index: 3;
-  width: 290px;
-  height: 290px;
-  border-radius: 50%;
-  position: relative;
-  filter: drop-shadow(3px 3px 3px black);
-  left: 90px;
+.header {
+  font-family: headingFont;
+  z-index: 9;
+  font-size: 6vw;
+  padding-bottom: 20%;
+  padding-top: 10%;
+  background-image: url(../images/wreath.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#circle0 {
-  z-index: 0;
-  border-radius: 50%;
-  width: 380px;
-  height: 380px;
-  background-color: rgba(107, 127, 215, 0.2);
-  position: absolute;
+.header h1 {
+  margin: auto;
 }
 
-#circle1 {
-  z-index: 4;
-  width: 120px;
-  height: 120px;
-  background-color: rgba(221, 251, 210, 0.3);
-  border-radius: 50%;
-  position: absolute;
-  margin-top: 170px;
-  margin-left: 360px;
-  filter: blur(3px);
-}
-
-#circle2 {
-  z-index: 1;
-  width: 80px;
-  height: 80px;
-  /* background-color: rgba(218, 255, 125, 0.5); */
-  background-color: rgba(218, 255, 125, 0.5);
-  border-radius: 50%;
-  position: absolute;
-  margin-left: -90px;
-  /* filter: blur(10px); */
-}
-
-#circle3 {
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(221, 251, 210, 0.2);
-  border-radius: 50%;
-  position: absolute;
-  margin-left: -30px;
-  margin-top: -10px;
-  filter: blur(5px);
-}
-
-#name {
-  font-size: 50px;
-  position: relative;
-  right: 100px;
-  bottom: 30px;
-  width: max-content;
-  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.451));
-}
-
-/* .content {
-  background-color: rgba(218, 255, 125, 0.05);
-  padding-top: 15px;
-} */
-
-.section {
-  background-color: rgba(107, 127, 215, 0.5);
-  /* background-color: rgba(218, 255, 125, 1); */
-  color: white;
-  padding-top: 25px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 30px auto;
-  width: 80%;
-}
-
-.section_tag {
-  background-color: rgba(218, 255, 125, 0.7);
-  color: #191919;
-  font-weight: bold;
-  width: fit-content;
-  padding: 8px 20px;
-  font-size: 20px;
-  position: absolute;
-  margin-top: -45px;
-  margin-left: -40px;
-  border-radius: 20px;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.536));
-}
-
-footer {
+.navigation {
+  z-index: 10;
+  background-color: #eac370c7;
+  position: fixed;
   width: 100%;
-  text-align: center;
-  color: #fdffff;
-  padding: 30px 0px;
-  background-color: rgba(107, 127, 215, 0.2);
+  padding: 1.6vh 0;
+  top: 0;
+  font-size: 4vw;
 }
 
-footer a {
-  color: #fdffff;
-  cursor: pointer;
-  display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 li {
+  font-weight: bold;
+  padding-left: 2svw;
+  padding-right: 2vw;
   list-style: none;
+  display: inline-block;
+  clear: left;
+  cursor: pointer;
 }
 
-ul,
-p {
-  padding: 0px;
-  margin: 0px;
+.content {
+  /* transform: translateY(-40vh); */
+  /* margin: auto 20vw; */
+  width: 50vw;
+  margin: auto;
+}
+
+.content h2 {
+  font-size: 7vw;
+  margin-top: 3vh;
+  margin-bottom: 0;
+}
+
+.content p {
+  font-size: 4vw;
+}
+
+#rsvp_form {
+  /* visibility: hidden; */
+  background-color: #eac3707d;
+  padding: 10%;
+  font-size: 4vw;
+}
+
+#RSVP_button {
+  cursor: pointer;
+  background-color: #eac3707d;
+}
+
+footer {
+  height: 2vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7vw;
+}
+
+a {
+  all: unset;
 }
