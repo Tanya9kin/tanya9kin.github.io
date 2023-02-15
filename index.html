@@ -13,10 +13,20 @@
       <!-- navigation bar -->
       <div class="navigation">
         <ul>
-          <li><a href="#RSVP_button">RSVP</a></li>
-          <li><a href="#time_section">Time and Place</a></li>
-          <li><a href="#photos_section">Photos</a></li>
-          <li><a href="#QandA_section">Q&A</a></li>
+          <li class="nav-btn">
+            <a href="#RSVP_button" title="Go to RSVP section">RSVP</a>
+          </li>
+          <li class="nav-btn">
+            <a href="#itinerary_section" title="Go to itinerary section"
+              >Itinerary</a
+            >
+          </li>
+          <li class="nav-btn">
+            <a href="#photos_section" title="Go to Photos section">Photos</a>
+          </li>
+          <li class="nav-btn">
+            <a href="#QandA_section" title="Go to Q&A section">Q&A</a>
+          </li>
         </ul>
       </div>
 
@@ -26,9 +36,65 @@
       </div>
 
       <div class="content">
-        <div class="section" id="time_section">
-          <h2>Time & Place</h2>
-          <p>Coming soon..</p>
+        <div class="section" id="itinerary_section">
+          <h2>Itinerary</h2>
+          <!-- <div
+            style="
+              overflow: hidden;
+              resize: none;
+              max-width: 100%;
+              width: 500px;
+              height: 500px;
+            "
+          >
+            <div
+              id="embed-map-canvas"
+              style="height: 100%; width: 100%; max-width: 100%"
+            >
+              <iframe
+                style="height: 100%; width: 100%; border: 0"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=כרמלה+Carmela,+כביש+ההר+הירוק,+יגור,+ישראל&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div>
+            <a
+              class="googl-ehtml"
+              href="https://www.bootstrapskins.com/themes"
+              id="get-map-data"
+              >premium bootstrap themes</a
+            ><style>
+              #embed-map-canvas img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
+          </div> -->
+          <a
+            href="https://www.carmelayagur.co.il/"
+            title="click to go to venue website"
+          >
+            <img
+              id="venue_logo"
+              src="https://www.carmelayagur.co.il/warehouse/dynamic/268894.svg"
+              alt="venue logo"
+            />
+          </a>
+          <div class="showtheway">
+            <a
+              href="https://showtheway.io/to/32.744598,35.074097?name=%D7%9B%D7%A8%D7%9E%D7%9C%D7%94%20Carmela"
+              target="_blank"
+              title="Show the Way to כרמלה Carmela with your favorite navigation application"
+              >Show the Way</a
+            >
+          </div>
+          <script
+            src="https://showtheway.io/w.js"
+            async="async"
+            type="text/javascript"
+          ></script>
+          <!-- <p>Coming soon..</p> -->
         </div>
 
         <div class="section" id="photos_section">
