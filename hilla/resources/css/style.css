@@ -163,7 +163,7 @@ header {
       hsla(260, 40%, 20%, 0.9),
       hsla(288, 40%, 30%, 0.2)
     ),
-    url(https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/303355932_10217868824110768_8707707862765201525_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=1yCQg7hGSq0AX85v0lz&_nc_ht=scontent.ftlv5-1.fna&oh=00_AfD8PddEHjqNBXaQar8AZ1SJ-yA5xE99TknKPjS7j6X2vQ&oe=63F8AFF2);
+    url("../images/main-header.jpg");
   background-position: center;
   background-size: cover;
   height: 600px;
